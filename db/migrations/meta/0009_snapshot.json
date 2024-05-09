@@ -1,6 +1,6 @@
 {
-  "id": "01d1f124-dfe2-45fc-88d0-5f36fc7424bd",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "06cb4b9a-1a84-49b8-84af-327cf9c15a75",
+  "prevId": "0811dab2-6bcd-42f6-a147-87e19cf4c8b3",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -43,18 +43,11 @@
           "primaryKey": false,
           "notNull": false
         },
-        "create-ts": {
-          "name": "create-ts",
-          "type": "timestamp",
+        "created-at": {
+          "name": "created-at",
+          "type": "timestamp with time zone",
           "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
-        "email_addresses": {
-          "name": "email_addresses",
-          "type": "text[]",
-          "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
         "first_name": {
           "name": "first_name",
@@ -88,22 +81,9 @@
           "primaryKey": true,
           "notNull": true
         },
-        "last_sign_in_at": {
-          "name": "last_sign_in_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
         "phone_numbers": {
           "name": "phone_numbers",
           "type": "text[]",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "updated_at": {
-          "name": "updated_at",
-          "type": "timestamp",
           "primaryKey": false,
           "notNull": false
         },

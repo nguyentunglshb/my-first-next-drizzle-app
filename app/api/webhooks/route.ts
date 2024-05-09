@@ -1,6 +1,7 @@
 import { Webhook } from "svix";
 import { headers } from "next/headers";
 import { WebhookEvent } from "@clerk/nextjs/server";
+import { createUser, deleteUser } from "@/db/actions/user";
 
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the endpoint
@@ -50,12 +51,26 @@ export async function POST(req: Request) {
 
   // Do something with the payload
   // For this guide, you simply log the payload to the console
-  const { id } = evt.data;
+  // const { id } = evt.data;
   const eventType = evt.type;
-  console.log({ user: evt.data });
+  // console.log(`Webhook with and ID of ${id} and type of ${eventType}`);
+  // console.log("Webhook body:", payload);
 
-  if (eventType === "user.created") {
-    console.log("userId:", id);
+  switch (eventType) {
+    case "user.created": {
+      const user = payload.data;
+      await createUser(user);
+      break;
+    }
+
+    case "user.deleted":
+      const userIdToDelete = payload.data.id;
+      await deleteUser(userIdToDelete);
+      break;
+
+    default: {
+      console.log(`${eventType}: `, payload);
+    }
   }
 
   return new Response("", { status: 200 });

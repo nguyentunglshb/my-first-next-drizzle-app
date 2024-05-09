@@ -5,8 +5,71 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1714965095885,
-      "tag": "0000_uneven_famine",
+      "when": 1715230383171,
+      "tag": "0000_narrow_bloodstrike",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1715230809499,
+      "tag": "0001_watery_black_crow",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1715230854464,
+      "tag": "0002_heavy_carnage",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1715230900089,
+      "tag": "0003_fat_ego",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1715238089304,
+      "tag": "0004_illegal_franklin_richards",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1715238145395,
+      "tag": "0005_yummy_captain_britain",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1715238178217,
+      "tag": "0006_perpetual_smasher",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1715238240394,
+      "tag": "0007_unusual_the_renegades",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1715238506134,
+      "tag": "0008_next_nocturne",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1715241599481,
+      "tag": "0009_dashing_mystique",
       "breakpoints": true
     }
   ]

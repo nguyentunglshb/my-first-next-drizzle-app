@@ -1,6 +1,6 @@
 {
-  "id": "01d1f124-dfe2-45fc-88d0-5f36fc7424bd",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "59db0352-3a83-44d6-a5e0-1cbe376466de",
+  "prevId": "01d1f124-dfe2-45fc-88d0-5f36fc7424bd",
   "version": "5",
   "dialect": "pg",
   "tables": {
@@ -43,13 +43,6 @@
           "primaryKey": false,
           "notNull": false
         },
-        "create-ts": {
-          "name": "create-ts",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
         "email_addresses": {
           "name": "email_addresses",
           "type": "text[]",
@@ -87,13 +80,6 @@
           "type": "text",
           "primaryKey": true,
           "notNull": true
-        },
-        "last_sign_in_at": {
-          "name": "last_sign_in_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
         },
         "phone_numbers": {
           "name": "phone_numbers",
