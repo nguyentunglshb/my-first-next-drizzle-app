@@ -59,7 +59,7 @@ export default async function Home() {
   );
 
   return (
-    <main className="flex -mt-16 min-h-screen flex-col align-center justify-center items-center px-24">
+    <main className="flex -mt-16 min-h-screen flex-col align-center justify-center items-center px-24 bg-white">
       <h2 className="text-2xl pb-6 text-gray-400">
         {existingMessage
           ? "Your quote is wonderful..."

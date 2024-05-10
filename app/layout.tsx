@@ -2,8 +2,17 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import FixedTopTimer from "@/components/TimeTracking/FixedTopTimer";
+
+import { Manrope } from "next/font/google";
+import { Toaster } from "@/components/ui/Toast/Toaster";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
+      <html lang="en" className={manrope.className}>
+        <body className={inter.className}>
+          <FixedTopTimer />
+          <Toaster />
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );
